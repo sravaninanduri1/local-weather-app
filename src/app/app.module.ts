@@ -7,9 +7,11 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { WeatherService } from './weather/weather.service';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule,MatToolbarModule,MatIconModule,MatCardModule,MatFormFieldModule,MatInputModule} from '@angular/material';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
-import { CitySearchComponent } from './city-search/city-search.component';
+
+import {MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CitySearchComponent } from './city-search/city-search.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { CitySearchComponent } from './city-search/city-search.component';
     MatIconModule,
     MatCardModule
   ],
-  exports:[
+  exports: [
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -39,7 +41,8 @@ import { CitySearchComponent } from './city-search/city-search.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
